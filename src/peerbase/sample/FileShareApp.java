@@ -297,16 +297,19 @@ public class FileShareApp extends JFrame
 
 	public static void main(String[] args) throws IOException
 	{
-		int port = 9000;
-		if (args.length != 1) {
-			System.out.println("Usage: java ... peerbase.sample.FileShareApp <host-port>");
+		int myPort = 9001;
+		int peerPort = 9000;
+		if (args.length != 2) {
+			System.out.println("Usage: java ... peerbase.sample.FileShareApp <my-port> <peer-port>");
+			System.exit(-1);
 		}
 		else {
-			port = Integer.parseInt(args[0]);
+			myPort = Integer.parseInt(args[0]);
+			peerPort = Integer.parseInt(args[1]);
 		}
 
 		LoggerUtil.setHandlersLevel(Level.FINE);
-		new FileShareApp("localhost", 9001, 5, new PeerInfo("localhost", port));
+		new FileShareApp("localhost", peerPort, 5, new PeerInfo("localhost", myPort));
 
 		/*	FileShareApp goo2 = new FileShareApp("localhost:8000", 
 		 5, new PeerData("localhost", 8001)); */
