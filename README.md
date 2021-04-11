@@ -1,6 +1,10 @@
 # PeerBase
 
-See: http://cs.berry.edu/~nhamid/p2p
+See: <br>
+Nadeem Abdul Hamid. 2007. A lightweight framework for peer-to-peer programming. *J. Comput. Sci. Coll.* 22, 5 (May 2007), 98–104.
+https://dl.acm.org/doi/10.5555/1229688.1229706
+
+For a tutorial see: http://cs.berry.edu/~nhamid/p2p
 
 To run this Java application, from a working directory with the `src/peerbase` folder in the Java classpath, type
 
