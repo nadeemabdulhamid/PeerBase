@@ -111,7 +111,7 @@ public class PeerMessage {
 	 * @return the message type (4-byte array)
 	 */
 	public byte[] getMsgTypeBytes() {
-		return (byte[])data.clone();
+		return (byte[])type.clone();
 	}
 	
 	
