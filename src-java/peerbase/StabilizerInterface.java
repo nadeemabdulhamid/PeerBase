@@ -34,5 +34,5 @@ package peerbase;
  *
  **/
 public interface StabilizerInterface {
-	public void stabilizer();
+	public void stabilize();
 }
