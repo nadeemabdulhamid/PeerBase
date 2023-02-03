@@ -54,7 +54,7 @@ public class SimplePingStabilizer implements StabilizerInterface {
 		this.msgtype = msgtype;
 	}
 	
-	public void stabilizer() {
+	public void stabilize() {
 		List<String> todelete = new ArrayList<String>();
 		for (String pid : peer.getPeerKeys()) {
 			boolean isconn = false;
